@@ -303,7 +303,7 @@ const TodoView = observer(({ todo }: { todo: Todo }) =>
    // CORRECT: wrap the callback rendering in Observer to be able to detect changes.
    return <GridRow onRender={() => <Observer>{() =>
      <td>{todo.title}</td>
-   }} />
+   }</Observer>} />
 }
 ```
 
